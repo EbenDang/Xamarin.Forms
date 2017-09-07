@@ -149,8 +149,7 @@ namespace Xamarin.Forms
 		public Rectangle Bounds
 		{
 			get { return new Rectangle(X, Y, Width, Height); }
-			private set
-			{
+			private set {
 				if (value.X == X && value.Y == Y && value.Height == Height && value.Width == Width)
 					return;
 				BatchBegin();
@@ -290,8 +289,7 @@ namespace Xamarin.Forms
 		{
 			get { return _mockX == -1 ? (double)GetValue(XProperty) : _mockX; }
 			private set {
-				SetValue(XPropertyKey, value);
-			}
+				SetValue(XPropertyKey, value); }
 		}
 
 		public double Y

@@ -1,11 +1,4 @@
-﻿//
-// CompressedLayout.xaml.cs
-//
-// Author:
-//       Stephane Delcroix <stdelc@microsoft.com>
-//
-// Copyright (c) 2017 
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
