@@ -57,8 +57,9 @@ namespace Xamarin.Forms.Platform.MacOS
 		{
 			_propertyChangedHandler = OnElementPropertyChanged;
 #if __MOBILE__
-			//BackgroundColor = _defaultColor;
-			BackgroundColor = new NativeColor(1, .7f, .2f, .3f);
+			BackgroundColor = _defaultColor;
+			//uncomment to debug renderers...
+			//BackgroundColor = new NativeColor(1, .7f, .2f, .3f);
 #else
 			WantsLayer = true;
 			Layer.BackgroundColor = _defaultColor.CGColor;
