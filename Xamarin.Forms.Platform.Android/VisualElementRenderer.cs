@@ -48,6 +48,7 @@ namespace Xamarin.Forms.Platform.Android
 			_scaleDetector = new Lazy<ScaleGestureDetector>(
 					() => new ScaleGestureDetector(Context, new InnerScaleListener(_pinchGestureHandler.OnPinch, _pinchGestureHandler.OnPinchStarted, _pinchGestureHandler.OnPinchEnded))
 					);
+			SetBackgroundColor(Xamarin.Forms.Color.FromRgba(1,.7,.2,.3).ToAndroid());
 		}
 
 		public TElement Element { get; private set; }
